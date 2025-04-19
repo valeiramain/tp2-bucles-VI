@@ -94,18 +94,16 @@ do {
                 break;
             default:
                 letra="";
-                document.writeln("operación inválida")
+                document.writeln("Operación inválida")
         }
         console.log("letra " + letra)
 
         if (letra !== "") {
-            document.writeln("Al dni " + dni + " le corresponde la letra " + letra+"<br>")
-            document.writeln(`Al dni ${dni} le corresponde la letra ${letra+} <br>`)
+            document.writeln(`<br>Al dni ${dni}, le corresponde la letra ${letra}`)
         }
     } else {
         alert("DNI incorrecto")
     }
-
 } while (confirm("¿Desea continuar cargando DNI?"));
 
 
