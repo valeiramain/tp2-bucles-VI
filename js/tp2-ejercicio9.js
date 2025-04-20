@@ -14,6 +14,7 @@
 // 9 (Múltiplo de 9)
 // 10
 
+let linea = 0
 for (let numero=1; (numero>= 1 && numero<=500); numero++){
     if ((numero%4)===0){
         document.writeln(`<br> ${numero} (múltiplo de 4)`)
@@ -21,5 +22,9 @@ for (let numero=1; (numero>= 1 && numero<=500); numero++){
         document.writeln(`<br> ${numero} (múltiplo de 9)`)
     } else{
         document.writeln(`<br> ${numero}`)
+    }
+    linea = linea + 1
+    if ((linea%5)===0){
+        document.writeln(`<br> ------------------------------`)
     }
 }
