@@ -1,12 +1,11 @@
 //15- Realiza un script que cuente el número de vocales que tiene un texto.
 
 const texto = prompt("Ingrese una cadena de texto: ")
+console.log(texto)
 
-if (cadenaTexto !== "" && cadenaTexto !== null) {
+if (texto !== "" && texto !== null) {
     const cadenaTexto = texto.toUpperCase();
     let vocales = 0
-    console.log(texto)
-    console.log(cadenaTexto)
 
     for (let i = 0; i < cadenaTexto.length; i++) {
         if ((cadenaTexto.charAt(i)) === "A" || (cadenaTexto.charAt(i)) === "E" || (cadenaTexto.charAt(i)) === "I" || (cadenaTexto.charAt(i)) === "O" || (cadenaTexto.charAt(i)) === "U") {
