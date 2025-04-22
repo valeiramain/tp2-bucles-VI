@@ -5,8 +5,11 @@
 const cadenaTexto = prompt("Ingrese una cadena de texto: ");
 let cadenaAlReves = ""
 
-for(let i=cadenaTexto.length-1; i>=0;i--){
-    cadenaAlReves = cadenaAlReves + cadenaTexto.charAt(i)
+if (cadenaTexto !== "" && cadenaTexto !== null) {
+    for (let i = cadenaTexto.length - 1; i >= 0; i--) {
+        cadenaAlReves = cadenaAlReves + cadenaTexto.charAt(i)
+    }
+    document.writeln(`La cadena ingresada: ${cadenaTexto}, queda escrita al revés: ${cadenaAlReves}`)
+} else {
+    document.writeln(`Operación Inválida`)
 }
-
-document.writeln(`La cadena ingresada: ${cadenaTexto}, queda escrita al revés: ${cadenaAlReves}`)
